@@ -1,0 +1,381 @@
+??:??:?? **** Rebuild of configuration Debug for project project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\project.o" "..\\src\\project.c" 
+..\src\project.c: In function 'main':
+..\src\project.c:38:25: error: too few arguments to function 'SensorSetMenu'
+   38 |                         SensorSetMenu();
+      |                         ^~~~~~~~~~~~~
+In file included from ..\src\project.c:11:
+..\src\head.h:25:6: note: declared here
+   25 | void SensorSetMenu(VehicleState *VS);
+      |      ^~~~~~~~~~~~~
+..\src\project.c:19:22: warning: variable 'VS' set but not used [-Wunused-but-set-variable]
+   19 |         VehicleState VS;
+      |                      ^~
+..\src\project.c: In function 'SensorSetMenu':
+..\src\project.c:73:25: error: too few arguments to function 'SetTrafficLight'
+   73 |                         SetTrafficLight();
+      |                         ^~~~~~~~~~~~~~~
+In file included from ..\src\project.c:11:
+..\src\head.h:26:6: note: declared here
+   26 | void SetTrafficLight(VehicleState *VS);
+      |      ^~~~~~~~~~~~~~~
+..\src\project.c:77:25: error: too few arguments to function 'SetRoomTempreture'
+   77 |                         SetRoomTempreture();
+      |                         ^~~~~~~~~~~~~~~~~
+In file included from ..\src\project.c:11:
+..\src\head.h:27:6: note: declared here
+   27 | void SetRoomTempreture(VehicleState *VS);
+      |      ^~~~~~~~~~~~~~~~~
+..\src\project.c:82:25: error: too few arguments to function 'SetEngineTempreture'
+   82 |                         SetEngineTempreture();
+      |                         ^~~~~~~~~~~~~~~~~~~
+In file included from ..\src\project.c:11:
+..\src\head.h:28:6: note: declared here
+   28 | void SetEngineTempreture(VehicleState *VS);
+      |      ^~~~~~~~~~~~~~~~~~~
+..\src\project.c:94:17: error: too few arguments to function 'DisplayVehicleState'
+   94 |                 DisplayVehicleState();
+      |                 ^~~~~~~~~~~~~~~~~~~
+In file included from ..\src\project.c:11:
+..\src\head.h:24:6: note: declared here
+   24 | void DisplayVehicleState(VehicleState *VS);
+      |      ^~~~~~~~~~~~~~~~~~~
+..\src\project.c: In function 'SetRoomTempreture':
+..\src\project.c:119:18: warning: format '%f' expects argument of type 'float *', but argument 2 has type 'int' [-Wformat=]
+  119 |         scanf(" %f", VS->RoomTemperature);
+      |                 ~^   ~~~~~~~~~~~~~~~~~~~
+      |                  |     |
+      |                  |     int
+      |                  float *
+..\src\project.c: In function 'SetEngineTempreture':
+..\src\project.c:129:18: warning: format '%f' expects argument of type 'float *', but argument 2 has type 'short int *' [-Wformat=]
+  129 |         scanf(" %f", &VS->EngineTemperature);
+      |                 ~^   ~~~~~~~~~~~~~~~~~~~~~~
+      |                  |   |
+      |                  |   short int *
+      |                  float *
+      |                 %hd
+..\src\project.c: In function 'DisplayVehicleState':
+..\src\project.c:151:40: warning: format '%f' expects argument of type 'double', but argument 2 has type 'int' [-Wformat=]
+  151 |         printf("Room Temperature is %.2f C\n", VS->RoomTemperature);
+      |                                     ~~~^       ~~~~~~~~~~~~~~~~~~~
+      |                                        |         |
+      |                                        double    int
+      |                                     %.2d
+..\src\project.c:159:42: warning: format '%f' expects argument of type 'double', but argument 2 has type 'int' [-Wformat=]
+  159 |         printf("Engine Temperature is %.2f C\n", VS->EngineTemperature);
+      |                                       ~~~^       ~~~~~~~~~~~~~~~~~~~~~
+      |                                          |         |
+      |                                          double    int
+      |                                       %.2d
+??:??:?? **** Incremental Build of configuration Debug for project project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\project.o" "..\\src\\project.c" 
+..\src\project.c: In function 'SensorSetMenu':
+..\src\project.c:73:25: error: too few arguments to function 'SetTrafficLight'
+   73 |                         SetTrafficLight();
+      |                         ^~~~~~~~~~~~~~~
+In file included from ..\src\project.c:11:
+..\src\head.h:26:6: note: declared here
+   26 | void SetTrafficLight(VehicleState *VS);
+      |      ^~~~~~~~~~~~~~~
+..\src\project.c:77:25: error: too few arguments to function 'SetRoomTempreture'
+   77 |                         SetRoomTempreture();
+      |                         ^~~~~~~~~~~~~~~~~
+In file included from ..\src\project.c:11:
+..\src\head.h:27:6: note: declared here
+   27 | void SetRoomTempreture(VehicleState *VS);
+      |      ^~~~~~~~~~~~~~~~~
+..\src\project.c:82:25: error: too few arguments to function 'SetEngineTempreture'
+   82 |                         SetEngineTempreture();
+      |                         ^~~~~~~~~~~~~~~~~~~
+In file included from ..\src\project.c:11:
+..\src\head.h:28:6: note: declared here
+   28 | void SetEngineTempreture(VehicleState *VS);
+      |      ^~~~~~~~~~~~~~~~~~~
+..\src\project.c:94:17: error: too few arguments to function 'DisplayVehicleState'
+   94 |                 DisplayVehicleState();
+      |                 ^~~~~~~~~~~~~~~~~~~
+In file included from ..\src\project.c:11:
+..\src\head.h:24:6: note: declared here
+   24 | void DisplayVehicleState(VehicleState *VS);
+      |      ^~~~~~~~~~~~~~~~~~~
+..\src\project.c: In function 'SetRoomTempreture':
+..\src\project.c:119:18: warning: format '%f' expects argument of type 'float *', but argument 2 has type 'int' [-Wformat=]
+  119 |         scanf(" %f", VS->RoomTemperature);
+      |                 ~^   ~~~~~~~~~~~~~~~~~~~
+      |                  |     |
+      |                  |     int
+      |                  float *
+..\src\project.c: In function 'SetEngineTempreture':
+..\src\project.c:129:18: warning: format '%f' expects argument of type 'float *', but argument 2 has type 'short int *' [-Wformat=]
+  129 |         scanf(" %f", &VS->EngineTemperature);
+      |                 ~^   ~~~~~~~~~~~~~~~~~~~~~~
+      |                  |   |
+      |                  |   short int *
+      |                  float *
+      |                 %hd
+..\src\project.c: In function 'DisplayVehicleState':
+..\src\project.c:151:40: warning: format '%f' expects argument of type 'double', but argument 2 has type 'int' [-Wformat=]
+  151 |         printf("Room Temperature is %.2f C\n", VS->RoomTemperature);
+      |                                     ~~~^       ~~~~~~~~~~~~~~~~~~~
+      |                                        |         |
+      |                                        double    int
+      |                                     %.2d
+..\src\project.c:159:42: warning: format '%f' expects argument of type 'double', but argument 2 has type 'int' [-Wformat=]
+  159 |         printf("Engine Temperature is %.2f C\n", VS->EngineTemperature);
+      |                                       ~~~^       ~~~~~~~~~~~~~~~~~~~~~
+      |                                          |         |
+      |                                          double    int
+      |                                       %.2d
+??:??:?? **** Incremental Build of configuration Debug for project project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\project.o" "..\\src\\project.c" 
+..\src\project.c: In function 'SetRoomTempreture':
+..\src\project.c:119:18: warning: format '%f' expects argument of type 'float *', but argument 2 has type 'int' [-Wformat=]
+  119 |         scanf(" %f", VS->RoomTemperature);
+      |                 ~^   ~~~~~~~~~~~~~~~~~~~
+      |                  |     |
+      |                  |     int
+      |                  float *
+..\src\project.c: In function 'SetEngineTempreture':
+..\src\project.c:129:18: warning: format '%f' expects argument of type 'float *', but argument 2 has type 'short int *' [-Wformat=]
+  129 |         scanf(" %f", &VS->EngineTemperature);
+      |                 ~^   ~~~~~~~~~~~~~~~~~~~~~~
+      |                  |   |
+      |                  |   short int *
+      |                  float *
+      |                 %hd
+..\src\project.c: In function 'DisplayVehicleState':
+..\src\project.c:151:40: warning: format '%f' expects argument of type 'double', but argument 2 has type 'int' [-Wformat=]
+  151 |         printf("Room Temperature is %.2f C\n", VS->RoomTemperature);
+      |                                     ~~~^       ~~~~~~~~~~~~~~~~~~~
+      |                                        |         |
+      |                                        double    int
+      |                                     %.2d
+..\src\project.c:159:42: warning: format '%f' expects argument of type 'double', but argument 2 has type 'int' [-Wformat=]
+  159 |         printf("Engine Temperature is %.2f C\n", VS->EngineTemperature);
+      |                                       ~~~^       ~~~~~~~~~~~~~~~~~~~~~
+      |                                          |         |
+      |                                          double    int
+      |                                       %.2d
+gcc -o project.exe "src\\project.o" 
+??:??:?? **** Incremental Build of configuration Debug for project project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\project.o" "..\\src\\project.c" 
+..\src\project.c: In function 'SetRoomTempreture':
+..\src\project.c:119:18: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'int' [-Wformat=]
+  119 |         scanf(" %s", VS->RoomTemperature);
+      |                 ~^   ~~~~~~~~~~~~~~~~~~~
+      |                  |     |
+      |                  |     int
+      |                  char *
+..\src\project.c: In function 'SetEngineTempreture':
+..\src\project.c:129:18: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'short int *' [-Wformat=]
+  129 |         scanf(" %s", &VS->EngineTemperature);
+      |                 ~^   ~~~~~~~~~~~~~~~~~~~~~~
+      |                  |   |
+      |                  |   short int *
+      |                  char *
+      |                 %ls
+..\src\project.c: In function 'DisplayVehicleState':
+..\src\project.c:151:40: warning: format '%f' expects argument of type 'double', but argument 2 has type 'int' [-Wformat=]
+  151 |         printf("Room Temperature is %.2f C\n", VS->RoomTemperature);
+      |                                     ~~~^       ~~~~~~~~~~~~~~~~~~~
+      |                                        |         |
+      |                                        double    int
+      |                                     %.2d
+..\src\project.c:159:42: warning: format '%f' expects argument of type 'double', but argument 2 has type 'int' [-Wformat=]
+  159 |         printf("Engine Temperature is %.2f C\n", VS->EngineTemperature);
+      |                                       ~~~^       ~~~~~~~~~~~~~~~~~~~~~
+      |                                          |         |
+      |                                          double    int
+      |                                       %.2d
+gcc -o project.exe "src\\project.o" 
+??:??:?? **** Incremental Build of configuration Debug for project project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\project.o" "..\\src\\project.c" 
+..\src\project.c: In function 'SetRoomTempreture':
+..\src\project.c:119:18: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+  119 |         scanf(" %d", VS->RoomTemperature);
+      |                 ~^   ~~~~~~~~~~~~~~~~~~~
+      |                  |     |
+      |                  int * int
+..\src\project.c: In function 'SetEngineTempreture':
+..\src\project.c:129:18: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'short int *' [-Wformat=]
+  129 |         scanf(" %d", &VS->EngineTemperature);
+      |                 ~^   ~~~~~~~~~~~~~~~~~~~~~~
+      |                  |   |
+      |                  |   short int *
+      |                  int *
+      |                 %hd
+..\src\project.c: In function 'DisplayVehicleState':
+..\src\project.c:151:40: warning: format '%f' expects argument of type 'double', but argument 2 has type 'int' [-Wformat=]
+  151 |         printf("Room Temperature is %.2f C\n", VS->RoomTemperature);
+      |                                     ~~~^       ~~~~~~~~~~~~~~~~~~~
+      |                                        |         |
+      |                                        double    int
+      |                                     %.2d
+..\src\project.c:159:42: warning: format '%f' expects argument of type 'double', but argument 2 has type 'int' [-Wformat=]
+  159 |         printf("Engine Temperature is %.2f C\n", VS->EngineTemperature);
+      |                                       ~~~^       ~~~~~~~~~~~~~~~~~~~~~
+      |                                          |         |
+      |                                          double    int
+      |                                       %.2d
+gcc -o project.exe "src\\project.o" 
+??:??:?? **** Incremental Build of configuration Debug for project project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\project.o" "..\\src\\project.c" 
+..\src\project.c: In function 'SetRoomTempreture':
+..\src\project.c:119:17: warning: spurious trailing '%' in format [-Wformat=]
+  119 |         scanf(" %", VS->RoomTemperature);
+      |                 ^
+..\src\project.c:119:15: warning: too many arguments for format [-Wformat-extra-args]
+  119 |         scanf(" %", VS->RoomTemperature);
+      |               ^~~~
+..\src\project.c: In function 'DisplayVehicleState':
+..\src\project.c:151:40: warning: format '%f' expects argument of type 'double', but argument 2 has type 'int' [-Wformat=]
+  151 |         printf("Room Temperature is %.2f C\n", VS->RoomTemperature);
+      |                                     ~~~^       ~~~~~~~~~~~~~~~~~~~
+      |                                        |         |
+      |                                        double    int
+      |                                     %.2d
+..\src\project.c:159:42: warning: format '%f' expects argument of type 'double', but argument 2 has type 'int' [-Wformat=]
+  159 |         printf("Engine Temperature is %.2f C\n", VS->EngineTemperature);
+      |                                       ~~~^       ~~~~~~~~~~~~~~~~~~~~~
+      |                                          |         |
+      |                                          double    int
+      |                                       %.2d
+gcc -o project.exe "src\\project.o" 
+??:??:?? **** Incremental Build of configuration Debug for project project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\project.o" "..\\src\\project.c" 
+..\src\project.c: In function 'SetRoomTempreture':
+..\src\project.c:119:17: warning: spurious trailing '%' in format [-Wformat=]
+  119 |         scanf(" %", &VS->RoomTemperature);
+      |                 ^
+..\src\project.c:119:15: warning: too many arguments for format [-Wformat-extra-args]
+  119 |         scanf(" %", &VS->RoomTemperature);
+      |               ^~~~
+..\src\project.c: In function 'DisplayVehicleState':
+..\src\project.c:151:40: warning: format '%f' expects argument of type 'double', but argument 2 has type 'int' [-Wformat=]
+  151 |         printf("Room Temperature is %.2f C\n", VS->RoomTemperature);
+      |                                     ~~~^       ~~~~~~~~~~~~~~~~~~~
+      |                                        |         |
+      |                                        double    int
+      |                                     %.2d
+..\src\project.c:159:42: warning: format '%f' expects argument of type 'double', but argument 2 has type 'int' [-Wformat=]
+  159 |         printf("Engine Temperature is %.2f C\n", VS->EngineTemperature);
+      |                                       ~~~^       ~~~~~~~~~~~~~~~~~~~~~
+      |                                          |         |
+      |                                          double    int
+      |                                       %.2d
+gcc -o project.exe "src\\project.o" 
+??:??:?? **** Incremental Build of configuration Debug for project project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\project.o" "..\\src\\project.c" 
+..\src\project.c: In function 'DisplayVehicleState':
+..\src\project.c:151:40: warning: format '%f' expects argument of type 'double', but argument 2 has type 'int' [-Wformat=]
+  151 |         printf("Room Temperature is %.2f C\n", VS->RoomTemperature);
+      |                                     ~~~^       ~~~~~~~~~~~~~~~~~~~
+      |                                        |         |
+      |                                        double    int
+      |                                     %.2d
+..\src\project.c:159:42: warning: format '%f' expects argument of type 'double', but argument 2 has type 'int' [-Wformat=]
+  159 |         printf("Engine Temperature is %.2f C\n", VS->EngineTemperature);
+      |                                       ~~~^       ~~~~~~~~~~~~~~~~~~~~~
+      |                                          |         |
+      |                                          double    int
+      |                                       %.2d
+gcc -o project.exe "src\\project.o" 
+??:??:?? **** Incremental Build of configuration Debug for project project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\project.o" "..\\src\\project.c" 
+gcc -o project.exe "src\\project.o" 
+Info: Nothing to build for project
+Info: Nothing to build for project
+??:??:?? **** Incremental Build of configuration Debug for project project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\project.o" "..\\src\\project.c" 
+gcc -o project.exe "src\\project.o" 
+??:??:?? **** Incremental Build of configuration Debug for project project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\project.o" "..\\src\\project.c" 
+gcc -o project.exe "src\\project.o" 
+??:??:?? **** Incremental Build of configuration Debug for project project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\project.o" "..\\src\\project.c" 
+..\src\project.c: In function 'SetEngineTempreture':
+..\src\project.c:132:27: error: 'VehicleState' has no member named 'EngineTemperature'; did you mean 'RoomTemperature'?
+  132 |         scanf(" %d", &VS->EngineTemperature);
+      |                           ^~~~~~~~~~~~~~~~~
+      |                           RoomTemperature
+..\src\project.c:133:17: error: 'VehicleState' has no member named 'EngineTemperature'; did you mean 'RoomTemperature'?
+  133 |         if (VS->EngineTemperature < 100 || VS->EngineTemperature > 150) {
+      |                 ^~~~~~~~~~~~~~~~~
+      |                 RoomTemperature
+..\src\project.c:133:48: error: 'VehicleState' has no member named 'EngineTemperature'; did you mean 'RoomTemperature'?
+  133 |         if (VS->EngineTemperature < 100 || VS->EngineTemperature > 150) {
+      |                                                ^~~~~~~~~~~~~~~~~
+      |                                                RoomTemperature
+..\src\project.c:134:19: error: 'VehicleState' has no member named 'ETCS'
+  134 |                 VS->ETCS = ON;
+      |                   ^~
+..\src\project.c:135:21: error: 'VehicleState' has no member named 'EngineTemperature'; did you mean 'RoomTemperature'?
+  135 |                 VS->EngineTemperature = 125;
+      |                     ^~~~~~~~~~~~~~~~~
+      |                     RoomTemperature
+..\src\project.c:137:19: error: 'VehicleState' has no member named 'ETCS'
+  137 |                 VS->ETCS = OFF;
+      |                   ^~
+??:??:?? **** Incremental Build of configuration Debug for project project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\project.o" "..\\src\\project.c" 
+..\src\project.c: In function 'SetEngineTempreture':
+..\src\project.c:132:27: error: 'VehicleState' has no member named 'EngineTemperature'; did you mean 'RoomTemperature'?
+  132 |         scanf(" %d", &VS->EngineTemperature);
+      |                           ^~~~~~~~~~~~~~~~~
+      |                           RoomTemperature
+..\src\project.c:133:17: error: 'VehicleState' has no member named 'EngineTemperature'; did you mean 'RoomTemperature'?
+  133 |         if (VS->EngineTemperature < 100 || VS->EngineTemperature > 150) {
+      |                 ^~~~~~~~~~~~~~~~~
+      |                 RoomTemperature
+..\src\project.c:133:48: error: 'VehicleState' has no member named 'EngineTemperature'; did you mean 'RoomTemperature'?
+  133 |         if (VS->EngineTemperature < 100 || VS->EngineTemperature > 150) {
+      |                                                ^~~~~~~~~~~~~~~~~
+      |                                                RoomTemperature
+..\src\project.c:134:19: error: 'VehicleState' has no member named 'ETCS'
+  134 |                 VS->ETCS = ON;
+      |                   ^~
+..\src\project.c:135:21: error: 'VehicleState' has no member named 'EngineTemperature'; did you mean 'RoomTemperature'?
+  135 |                 VS->EngineTemperature = 125;
+      |                     ^~~~~~~~~~~~~~~~~
+      |                     RoomTemperature
+..\src\project.c:137:19: error: 'VehicleState' has no member named 'ETCS'
+  137 |                 VS->ETCS = OFF;
+      |                   ^~
+??:??:?? **** Incremental Build of configuration Debug for project project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\project.o" "..\\src\\project.c" 
+gcc -o project.exe "src\\project.o" 
+Info: Nothing to build for project
+??:??:?? **** Incremental Build of configuration Debug for project project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\project.o" "..\\src\\project.c" 
+gcc -o project.exe "src\\project.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file project.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+??:??:?? **** Incremental Build of configuration Debug for project project ****
+Info: Internal Builder is used for build
+gcc -o project.exe "src\\project.o" 
+Info: Nothing to build for project
+??:??:?? **** Incremental Build of configuration Debug for project project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\project.o" "..\\src\\project.c" 
+gcc -o project.exe "src\\project.o" 
+Info: Nothing to build for project
+??:??:?? **** Incremental Build of configuration Debug for project project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\project.o" "..\\src\\project.c" 
+gcc -o project.exe "src\\project.o" 
